@@ -1,0 +1,270 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+    "Helvetica Neue", sans-serif;
+}
+
+body {
+  color: #1d1d1f;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%);
+  width: 350px;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Logo Section */
+.logo-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+/* Password Display */
+.password-display {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#password-output {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  outline: none;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 500;
+}
+
+#copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #0066cc;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+#copy-btn:hover {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+/* Options */
+.options {
+  margin-bottom: 20px;
+}
+
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.option-row label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e4e4e4;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:checked + .slider {
+  background-color: #34c759;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Length Control */
+.length-control {
+  display: flex;
+  align-items: center;
+}
+
+#decrease-length,
+#increase-length {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#decrease-length:hover,
+#increase-length:hover {
+  background-color: #f5f5f7;
+}
+
+#length-value {
+  margin: 0 15px;
+  font-weight: 500;
+  min-width: 25px;
+  text-align: center;
+}
+
+/* Generate Button */
+.cta-button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 102, 204, 0.25);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cta-button:hover {
+  background-color: #0055b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+}
+
+/* Password Strength Meter */
+.password-strength {
+  margin-top: 15px;
+}
+
+.strength-label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.strength-meter {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.strength-segment {
+  height: 6px;
+  flex: 1;
+  border-radius: 3px;
+  background-color: #e4e4e4;
+  transition: background-color 0.3s;
+}
+
+.strength-segment[data-active="true"][data-strength="1"] {
+  background-color: #ff3b30;
+}
+
+.strength-segment[data-active="true"][data-strength="2"] {
+  background-color: #ff9500;
+}
+
+.strength-segment[data-active="true"][data-strength="3"] {
+  background-color: #ffcc00;
+}
+
+.strength-segment[data-active="true"][data-strength="4"] {
+  background-color: #34c759;
+}
+
+.strength-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #34c759;
+}
+
+/* Footer with copyright */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.copyright {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}

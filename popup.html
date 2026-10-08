@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <h1 class="logo">Elegant Password</h1>
+      </div>
+
+      <div class="password-display">
+        <input type="text" id="password-output" readonly />
+        <button id="copy-btn" aria-label="Copy password">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path
+              d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="options">
+        <div class="option-row">
+          <label for="length">Length</label>
+          <div class="length-control">
+            <button id="decrease-length">−</button>
+            <span id="length-value">16</span>
+            <button id="increase-length">+</button>
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label for="uppercase">Uppercase Letters</label>
+          <label class="switch">
+            <input type="checkbox" id="uppercase" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="lowercase">Lowercase Letters</label>
+          <label class="switch">
+            <input type="checkbox" id="lowercase" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="numbers">Numbers</label>
+          <label class="switch">
+            <input type="checkbox" id="numbers" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="symbols">Symbols</label>
+          <label class="switch">
+            <input type="checkbox" id="symbols" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="easy-to-read">Easy to Read</label>
+          <label class="switch">
+            <input type="checkbox" id="easy-to-read" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <button id="generate-btn" class="cta-button">Generate Password</button>
+
+      <div class="password-strength">
+        <div class="strength-label">Password Strength:</div>
+        <div class="strength-meter">
+          <div class="strength-segment" data-strength="1"></div>
+          <div class="strength-segment" data-strength="2"></div>
+          <div class="strength-segment" data-strength="3"></div>
+          <div class="strength-segment" data-strength="4"></div>
+        </div>
+        <div class="strength-text">Strong</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="copyright">
+        © <span id="current-year"></span> Code Meets Bagel LLC
+      </p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

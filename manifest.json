@@ -1,0 +1,23 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "author": "Code Meets Bagel LLC",
+   "description": "Generate secure, Apple-inspired passwords with ease",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtC3+4LBXZlKb+VkX8qYA1+6Uo9glbx88HybNkNxji9+AVKNc57/f/ykPeJe3V13EHvSiUsFlfe0UHcbssSXDCjxU3VB/HSkZMWWijQ6wnuBsiKf0jnJJt6lHEKai5CHQJHlXgO63zDPYzBlL+tozj9mtLdaab1Me/OIoNniUCzTzRxjC0qAXhh7z8471/joydXI8ME0ox8FvoqJb9G/O1bYcydJjjqmrVQtVYIk1iLnp8B96Y/AMANSSeFtcBt9z1PG2MR9MTmnWxPgZgSBx3L+DRQfNYvPZtd4RHZ3n5gqm7HFNbWSGzZHg6toiHWCh2xU+nWBOv5mSgsQWLbtACQIDAQAB",
+   "manifest_version": 3,
+   "name": "Elegant Password Generator",
+   "permissions": [ "clipboardWrite", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
