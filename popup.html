@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elegant Password Generator</title>
+    <title>Strong Password Generator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="logo-container">
-        <h1 class="logo">Elegant Password</h1>
+        <h1 class="logo">Strong Password</h1>
       </div>
 
       <div class="password-display">
@@ -34,75 +34,11 @@
         </button>
       </div>
 
-      <div class="options">
-        <div class="option-row">
-          <label for="length">Length</label>
-          <div class="length-control">
-            <button id="decrease-length">−</button>
-            <span id="length-value">16</span>
-            <button id="increase-length">+</button>
-          </div>
-        </div>
-
-        <div class="option-row">
-          <label for="uppercase">Uppercase Letters</label>
-          <label class="switch">
-            <input type="checkbox" id="uppercase" checked />
-            <span class="slider round"></span>
-          </label>
-        </div>
-
-        <div class="option-row">
-          <label for="lowercase">Lowercase Letters</label>
-          <label class="switch">
-            <input type="checkbox" id="lowercase" checked />
-            <span class="slider round"></span>
-          </label>
-        </div>
-
-        <div class="option-row">
-          <label for="numbers">Numbers</label>
-          <label class="switch">
-            <input type="checkbox" id="numbers" checked />
-            <span class="slider round"></span>
-          </label>
-        </div>
-
-        <div class="option-row">
-          <label for="symbols">Symbols</label>
-          <label class="switch">
-            <input type="checkbox" id="symbols" checked />
-            <span class="slider round"></span>
-          </label>
-        </div>
-
-        <div class="option-row">
-          <label for="easy-to-read">Easy to Read</label>
-          <label class="switch">
-            <input type="checkbox" id="easy-to-read" />
-            <span class="slider round"></span>
-          </label>
-        </div>
-      </div>
-
       <button id="generate-btn" class="cta-button">Generate Password</button>
-
-      <div class="password-strength">
-        <div class="strength-label">Password Strength:</div>
-        <div class="strength-meter">
-          <div class="strength-segment" data-strength="1"></div>
-          <div class="strength-segment" data-strength="2"></div>
-          <div class="strength-segment" data-strength="3"></div>
-          <div class="strength-segment" data-strength="4"></div>
-        </div>
-        <div class="strength-text">Strong</div>
-      </div>
     </div>
 
     <div class="footer">
-      <p class="copyright">
-        © <span id="current-year"></span> Code Meets Bagel LLC
-      </p>
+      <p class="copyright">© <span id="current-year"></span> Zach Perlmutter</p>
     </div>
 
     <script src="popup.js"></script>
