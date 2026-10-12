@@ -35,6 +35,61 @@
       </div>
 
       <button id="generate-btn" class="cta-button">Generate Password</button>
+
+      <button id="advanced-toggle" class="advanced-toggle" aria-expanded="false">
+        Advanced <span class="chevron">▾</span>
+      </button>
+
+      <div id="advanced-options" class="options" hidden>
+        <div class="option-row">
+          <label for="length">Length</label>
+          <div class="length-control">
+            <button id="decrease-length">−</button>
+            <span id="length-value">16</span>
+            <button id="increase-length">+</button>
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label for="uppercase">Uppercase Letters</label>
+          <label class="switch">
+            <input type="checkbox" id="uppercase" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="lowercase">Lowercase Letters</label>
+          <label class="switch">
+            <input type="checkbox" id="lowercase" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="numbers">Numbers</label>
+          <label class="switch">
+            <input type="checkbox" id="numbers" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="symbols">Symbols</label>
+          <label class="switch">
+            <input type="checkbox" id="symbols" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <label for="easy-to-read">Easy to Read</label>
+          <label class="switch">
+            <input type="checkbox" id="easy-to-read" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
     </div>
 
     <div class="footer">

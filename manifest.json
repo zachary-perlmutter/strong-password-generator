@@ -17,7 +17,7 @@
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtC3+4LBXZlKb+VkX8qYA1+6Uo9glbx88HybNkNxji9+AVKNc57/f/ykPeJe3V13EHvSiUsFlfe0UHcbssSXDCjxU3VB/HSkZMWWijQ6wnuBsiKf0jnJJt6lHEKai5CHQJHlXgO63zDPYzBlL+tozj9mtLdaab1Me/OIoNniUCzTzRxjC0qAXhh7z8471/joydXI8ME0ox8FvoqJb9G/O1bYcydJjjqmrVQtVYIk1iLnp8B96Y/AMANSSeFtcBt9z1PG2MR9MTmnWxPgZgSBx3L+DRQfNYvPZtd4RHZ3n5gqm7HFNbWSGzZHg6toiHWCh2xU+nWBOv5mSgsQWLbtACQIDAQAB",
    "manifest_version": 3,
    "name": "Strong Password Generator",
-   "permissions": [ "clipboardWrite" ],
+   "permissions": [ "clipboardWrite", "storage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.1"
+   "version": "1.2"
 }
